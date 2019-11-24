@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar" />
+
+    <ImageView
+        android:id="@+id/icon_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/btn_menu" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/img_ilustrasi" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_menu"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Mata Pelajaran"
+        android:textSize="24dp" />
+
+    <!--    <ScrollView-->
+    <!--        android:layout_above="@id/ll_buttom"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_below="@id/tv_title"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_buttom"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparan" />
+    <!--    </ScrollView>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_naf_buttom_white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azwar"
+                android:textColor="@color/abu_abu"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kursus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kursus"
+                android:textColor="@color/abu_abu"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/orange_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_home" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cari"
+                android:textColor="@color/abu_abu"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textColor="@color/abu_abu"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/line_butt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hitam" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

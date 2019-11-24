@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DashboardUIDesign</string>
+
+
+    <string-array name="title">
+        <item>Matematika</item>
+        <item>Fisika</item>
+        <item>Kimia</item>
+        <item>Biologi</item>
+        <item>Geografi</item>
+        <item>English</item>
+
+    </string-array>
+
+    <string-array name="poster">
+        <item>@drawable/img_mtk</item>
+        <item>@drawable/img_fisika</item>
+        <item>@drawable/img_kimia</item>
+        <item>@drawable/img_biologi</item>
+        <item>@drawable/img_geografi</item>
+        <item>@drawable/img_english</item>
+    </string-array>
+
+    <string-array name="background">
+        <item>@drawable/bg_mtk</item>
+        <item>@drawable/bg_fisika</item>
+        <item>@drawable/bg_kimia</item>
+        <item>@drawable/bg_biologi</item>
+        <item>@drawable/bg_geografi</item>
+        <item>@drawable/bg_english</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="hitam">#000000</color>
+    <color name="transparan">#00000000</color>
+    <color name="color_btn_home">#FC4926</color>
+    <color name="abu_abu">#B2B2B2</color>
+
+
+
+    //matematika
+    <color name="pink">#FF416C</color>
+    <color name="ungu">#8A52E9</color>
+
+    //fisika
+    <color name="fis1">#FFA72F</color>
+    <color name="fis2">#FF641A</color>
+
+    //kimia
+    <color name="kimia1">#FF961E</color>
+    <color name="kimia2">#FFC92B</color>
+
+    //Biologi
+    <color name="bio1">#FF7765</color>
+    <color name="bio2">#F7A23C</color>
+
+    //geografi
+    <color name="geo1">#EF32D9</color>
+    <color name="geo2">#376DF6</color>
+
+    //english
+    <color name="eng1">#21E8AC</color>
+    <color name="eng2">#376DF6</color>
+
+
+</resources>
